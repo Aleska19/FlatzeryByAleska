@@ -1,0 +1,89 @@
+/*mision*/
+.grid_mision{
+    display: grid;
+    grid-template-columns: 500px;
+    grid-template-rows: 200px auto;
+    justify-content: center;
+    justify-items: center;
+    padding: $padding_desktop
+}
+
+.img_position{
+    align-self: center;
+    justify-self: center;
+}
+
+.mision_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}.mision_info p{
+    color: #7f8c8d;
+    font-size: $p_font_size;
+    line-height: normal;
+    font-family: $p_font;
+    font-weight: 400;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+/*Que hacemos*/
+.section_1{
+    background: #f2f4f7;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: 350px;
+    gap: 20px;
+    justify-items: center;
+    justify-content: center
+}
+
+.title_que_hacemos{
+    padding: 40px 0 40px 0;
+    text-align: center;
+}
+
+.contenedor h3{
+    padding: 10px;
+    font-size: $h3_font_size_desktop;
+    font-family: "Open Sans";
+    color: #818485;
+    width: 170px;
+    text-align: center;
+}
+
+/*Nuestro enfoque*/
+.section_2{
+    display: grid;
+    grid-template-columns: 600px 400px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 60px 10px 60px 10px;
+}
+
+.enfoque{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title_enfoque{
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.enfoque p{
+    font-size: 1rem;
+    text-align: center;
+    width: 550px;
+    line-height: 1.5;
+    font-family: "lato";
+    margin-top: 20px;
+    padding: 10px 0 10px 0;
+}
+

@@ -1,0 +1,132 @@
+/*header and navbar*/
+.header{
+    @include respond-to(tablet) {
+        padding: 0;
+    }
+}
+
+.navbar{
+    @include respond-to(tablet){
+        opacity: 0;
+        visibility: hidden;
+
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        gap: 1rem;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000000;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgb(0, 0, 0, .5);
+    }
+}.navbar.visible{
+    @include respond-to(tablet){
+        opacity: 1;
+        visibility: visible;
+    }
+}.nav-list{
+    @include respond-to(tablet){
+        flex-direction: column;
+        position: relative;
+        bottom: 55%;
+    }
+}.abrir-menu, .cerrar-menu{
+    @include respond-to(tablet){
+        display: block;
+        border:0;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: #FFF;
+    }
+}
+
+.info a{
+    @include respond-to(mobile){
+       /*width: 100%;*/
+    }
+}.grid_padre{
+    @include respond-to(mobile){
+        background-attachment: scroll;
+        height: 600px;
+        background-position: center;
+        padding: 2rem;
+    }
+}.caja_1{
+    @include respond-to(mobile){
+        padding: 2rem 0 2rem 0;
+    }
+}.info{
+    @include respond-to(mobile){
+        margin: 0;
+    }
+}.info h2{
+    @include respond-to(mobile){
+        font-size: $h2_font_size_mobile;
+        width: 250px;
+        margin:0;
+        padding: 3rem 0 3rem 0;
+    }
+}
+
+.grid_mision{
+    @include respond-to(mobile){
+        grid-template-columns: 350px;
+    }
+}.mision_info p{
+    @include respond-to(mobile){
+        font-size: $p_font_size_mobile;
+    }
+}.img_width{
+    @include respond-to(mobile){
+        width: 20rem;
+    }
+}
+
+.contenedor{
+    @include respond-to(mobile){
+        grid-template-columns: 300px;
+        grid-template-rows: 250px 250px 250px 250px;
+    }
+}
+
+.section_2{
+    @include respond-to(mobile){
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows: 300px 200px;
+        gap: 10px;
+        padding: 10px;
+    }
+}.enfoque p{
+    @include respond-to(mobile){
+        width: 300px;
+        font-size: $p_font_size_mobile;
+        text-align: center;
+        padding: 0;
+    }
+}.img{
+    @include respond-to(mobile){
+        width: 20rem ;
+    }
+}
+
+/*Servicios*/
+.grid_service{
+    @include respond-to(mobile){
+        grid-template-columns: 300px;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px;
+        padding: 0;
+        gap: 2rem;
+    }
+}
+
+
+
+
+
+
+    

@@ -1,0 +1,47 @@
+.title_coral{
+    color: $title_color_coral;
+    font-family: $title_font;
+    font-size: $h1_font_size;
+}
+
+.icono_service{
+    width: 5rem;
+    margin-bottom: 1rem;
+}
+
+/*NUESTROS SERVICIOS*/
+.title_service{
+    margin: 10px;
+    padding: $padding_desktop 0 $padding_desktop 0;
+    color: $title_color;
+    font-size: $h1_font_size;
+    font-family:$title_font; 
+    text-align: center;
+}
+.grid_service{
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 300px 300px;
+    gap: 20px;
+    padding: 40px;
+}
+
+.service{
+    text-align: center;
+}
+
+.service h3{
+    color: #000000;
+    font-size: $h3_font_size_desktop;
+    font-family:$p_font; 
+    text-align: center; 
+}
+
+.service p{
+    color:  #7f8c8d;
+    text-align: center;
+    font-size:1rem;
+    padding: 15px;
+    font-family: 'open sans';
+}

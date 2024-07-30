@@ -1,0 +1,97 @@
+@import 'utils/variables';
+@import 'utils/mixin';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid_padre{
+    @include grid_header
+}
+/*background inici*/
+.background_grid_inicio{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/inicio_1.jpg);
+    @include background_header;
+}
+
+/*background service*/
+.background_grid_service{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/img/fondo_2.jpg);
+    @include background_header;   
+}
+
+.header{
+    @include general_header;
+}
+
+.logo{
+    max-width:  10rem;
+}
+
+.navbar{
+    margin-top: 10px;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}.nav-list li a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-family: "Open Sans";
+    font-size: 1rem;
+}  .nav-list a:hover{
+    background-color: rgba(255, 255, 255, 0.231);
+    padding: 5px;
+    color: rgb(130, 198, 229)
+}
+
+/*inicio and service*/
+.caja_1{
+    @include caja_1;
+}
+
+
+
+.info{
+    @include info;
+}
+
+
+.info h2{
+    @include info_h2
+}
+
+.info a{
+    @include info_a;
+}.info a:hover{
+    color:  rgb(222, 215, 215);
+}
+
+
+.icono_inicio{
+    width: $icono;
+}
+
+.title{
+    @include title
+}
+
+.img{
+    @include imagenes;
+}
+
+@import 'components/menumobile';
+/*inicio*/
+@import 'page/inicio';
+@import 'page/nosotros';
+@import 'page/servicios';
+
+@include footer;
+
+@import 'utils/media-queries';
+
+

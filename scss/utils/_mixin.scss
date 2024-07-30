@@ -1,0 +1,106 @@
+@mixin grid_header{
+    display: grid;
+    grid-template-rows: 70px 800px;
+    height: 800px;
+    padding: 30px;
+}
+
+
+@mixin background_header{
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+}
+
+@mixin general_header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem;
+}
+
+/*inicio info and service*/
+@mixin caja_1{
+    display: flex;
+    justify-content: center;
+    padding: $padding_desktop 0 $padding_desktop 0;
+}
+
+@mixin info{
+    text-align: center;
+    max-width: 50%;
+    min-width: 50%;
+    max-height: 400px;
+    align-content: center;
+    margin: 3rem 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin info_h2{
+    color: #FFF;
+    font-family: "Open Sans";
+    font-size: $h2_font_size_desktop;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding: 2rem;
+    
+}
+
+@mixin info_a{
+    background-color: rgb(230 57 70);
+    padding: 10px;
+    text-decoration: none;
+    color: #FFF;
+    margin-bottom: 50px;
+}
+
+@mixin hover_botton{
+    color:  rgb(222, 215, 215);
+}
+
+@mixin title{
+    font-size: $h1_font_size;
+    font-family: $title_font;
+    color: $title_color;
+}
+
+@mixin imagenes{
+    width: 25rem;
+}
+
+@mixin footer{
+    footer{
+        background-color: black;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 60px 30px 60px;
+    }
+    
+    footer p{
+        color: white
+    }
+}
+
+/*media queries*/
+@mixin respond-to($breakpoint){
+    @if $breakpoint == mobile{
+        @media (max-width: $breakpoint-mobile){
+            @content;
+        }
+    } @else if  $breakpoint == tablet{
+        @media (max-width: $breakpoint-tablet){
+            @content;
+        }
+    }@else if $breakpoint == desktop{
+        @media (max-width: $breakpoint-desktop){
+            @content
+        }
+    }
+}
+
+
