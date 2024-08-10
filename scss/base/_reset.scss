@@ -43,27 +43,8 @@
   /* Evitamos problemas con las imagenes */
   img , picture , video , iframe , figure{
     max-width: 100%;
-    width: 100%;
-    display: block;
     /* (Opcional) */ object-fit: cover;        
     /* (Opcional) */ object-position: center center;
-  }
-  
-  /* Reseteamos los enlaces para funcionar como cajas... */
-  a {
-    display: block;
-    text-decoration: none;
-    color:inherit;
-    font-size:inherit;
-  }
-  /* ... excepto los que se encuentran en párrafos */
-  p a {
-    display: inline;
-  }
-  
-  /* Quitamos los puntos de los <li> */
-  li {
-    list-style-type: none;
   }
   
   /* (Opcional) Configuramos anclas suaves */
@@ -91,16 +72,6 @@
     color: var(--blanco);
   }
   
-  /* Nivelamos problemas de tipografías y colocación de formularios */
-  form , input, textarea, select , button , label{
-      font-family: inherit;
-      font-size: inherit;
-      hyphens: auto;
-      background-color: transparent;
-      color:inherit;
-      display: block;
-      /* (Opcional) */ appearance: none;
-  }
   
   /* Reseteamos las tablas */
   table , tr , td {
@@ -108,12 +79,6 @@
     border-spacing: 0;
   }
   
-  /* Evitamos problemas con los SVG */
-  svg{
-      width: 100%;
-      display: block;
-      fill: currentColor;
-  }
   
   /* Configuramos la tipografía para toda la web */
   body {

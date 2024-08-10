@@ -58,7 +58,7 @@
 /*Nuestro enfoque*/
 .section_2{
     display: grid;
-    grid-template-columns: 600px 400px;
+    grid-template-columns: 500px 400px;
     gap: 20px;
     justify-content: center;
     align-items: center;
@@ -75,12 +75,13 @@
 .title_enfoque{
     padding-bottom: 30px;
     text-align: center;
+    min-width: 500px;
 }
 
 .enfoque p{
     font-size: 1rem;
     text-align: center;
-    width: 550px;
+    max-width: 600px;
     line-height: 1.5;
     font-family: "lato";
     margin-top: 20px;

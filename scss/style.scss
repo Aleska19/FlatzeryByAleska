@@ -1,3 +1,5 @@
+
+@import 'base/reset';
 @import 'utils/variables';
 @import 'utils/mixin';
 *{
@@ -11,19 +13,32 @@
 }
 /*background inici*/
 .background_grid_inicio{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/inicio_1.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/inicio_1.jpg);
     @include background_header;
 }
 
 /*background service*/
 .background_grid_service{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/img/fondo_2.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/img/fondo_2.jpg);
     @include background_header;   
+}
+
+/*background nosotros*/
+.background_grid_nosotros{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/img/fondo_nosotros.jpg);
+    @include background_header;   
+}
+
+/*background section contacto*/
+.section_1_contacto{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/equipo-de-trabajo_2.jpg);
+    @include background_header;
+    height: 500px;
 }
 
 .header{
     @include general_header;
-}
+}   
 
 .logo{
     max-width:  10rem;
@@ -84,11 +99,15 @@
     @include imagenes;
 }
 
+
+/*bootrap*/
+
 @import 'components/menumobile';
 /*inicio*/
 @import 'page/inicio';
 @import 'page/nosotros';
 @import 'page/servicios';
+@import 'page/contacto';
 
 @include footer;
 

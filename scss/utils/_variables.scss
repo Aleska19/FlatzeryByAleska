@@ -10,11 +10,11 @@ $h2_font_size_desktop: 1.5rem;
 $h2_font_size_mobile: 1rem;
 $h3_font_size_desktop: 1rem;
 $icono: 10rem;
-$p_font_size: 1.5rem;
+$p_font_size: 1.2rem;
 $p_font_size_mobile: 1rem;
 $padding_desktop: 3rem;
 
 /*media quieries*/
-$breakpoint-mobile: 600px;
-$breakpoint-tablet: 768px;
-$breakpoint-desktop: 1024px;
+$breakpoint-small: 400px;
+$breakpoint-medium: 885px;
+$breakpoint-large: 1024px;

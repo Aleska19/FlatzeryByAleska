@@ -28,8 +28,8 @@
 
 @mixin info{
     text-align: center;
-    max-width: 50%;
-    min-width: 50%;
+    max-width: 700px;
+    min-width: 0;
     max-height: 400px;
     align-content: center;
     margin: 3rem 0 3rem 0;
@@ -47,6 +47,11 @@
     line-height: normal;
     padding: 2rem;
     
+}
+
+@mixin parrafos{
+    font-family: $p_font;
+    font-size: $p_font_size;
 }
 
 @mixin info_a{
@@ -88,16 +93,16 @@
 
 /*media queries*/
 @mixin respond-to($breakpoint){
-    @if $breakpoint == mobile{
-        @media (max-width: $breakpoint-mobile){
+    @if $breakpoint == small{
+        @media (max-width: $breakpoint-small){
             @content;
         }
-    } @else if  $breakpoint == tablet{
-        @media (max-width: $breakpoint-tablet){
+    } @else if  $breakpoint == medium{
+        @media (max-width: $breakpoint-medium){
             @content;
         }
-    }@else if $breakpoint == desktop{
-        @media (max-width: $breakpoint-desktop){
+    }@else if $breakpoint == large{
+        @media (max-width: $breakpoint-large){
             @content
         }
     }

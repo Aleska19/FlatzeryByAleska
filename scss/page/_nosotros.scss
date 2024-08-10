@@ -1,0 +1,95 @@
+
+.grid{
+    display: grid;
+    grid-template-rows: 200px 300px 450px;
+}
+
+.grid img{
+    justify-self: center;
+}
+
+
+
+.mision_vision_grid{
+    display: grid;
+    grid-template-columns:  400px 400px;
+    grid-template-rows: 300px;
+    gap: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.title_mision_vision{
+    text-align: center
+}
+
+.item p{
+    @include parrafos;
+    max-width: 500px;
+    text-align: center;
+}
+
+
+/*valores*/
+.general_valores{
+    margin-top: 2rem;
+    padding: 0 20px 30px 20px;
+    background: black;
+}
+
+.img_valores{
+    position: relative;
+    bottom: 20%;
+}
+
+.title_valores{
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.nuestros_valores{
+    display: grid;
+    grid-template-columns:  350px 350px 350px;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding-top: 2rem;
+}
+
+.nuestros_valores ul{
+    list-style: none;
+}
+
+.nuestros_valores ul li{
+    max-width: 500px;
+    padding-top: 20px;
+    font-family: $p_font;
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+.nuestros_valores ul li strong{
+    color:  rgb(230 57 70);
+}
+
+/*nuestro equipo*/
+.title_equipo{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.general_cards{
+    display: flex;
+    justify-content: center;
+    padding: $padding_desktop 0 $padding_desktop 0;
+    gap: 2rem;
+}
+
+.card-title{
+    color:  rgb(230 57 70);
+    text-align: center;
+}
+.card-text{
+    @include parrafos;
+    text-align: center;
+}

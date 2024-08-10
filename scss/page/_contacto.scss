@@ -1,0 +1,149 @@
+.header_contacto{
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    height: 80px;
+}
+
+.background_title_contacto{
+    position: absolute;
+    top: 40%;
+    padding: 3rem;
+    box-shadow: 2px 2px 2px white;
+    background: #0000008f;
+    max-width: 500px;
+}
+
+
+.title_contacto{
+    @include title;
+    color: white !important;
+   
+}
+
+.grid_section{
+    display: grid;
+    grid-template-columns: 600px 400px;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.contact_form{	
+max-width: 460px; 
+height: auto;
+margin: 80px auto;
+border-radius: 10px;  
+padding-top: 30px;
+padding-bottom: 20px;  
+background-color: #fbfbfb; 
+padding-left: 30px; 
+box-shadow: 3px 2px 3px 2px #a8a8a8;
+}
+
+
+input{
+	background-color: #fbfbfb; 
+	width: 408px; 
+	height: 40px; 
+	border-radius: 5px;  
+    border: 2px  solid   #4F7A92;
+	margin-top: 10px;  
+	padding-left: 10px;
+    margin-bottom: 20px; 
+}
+
+
+textarea{
+  background-color: #fbfbfb; 
+	width: 405px; 
+	height: 150px; 
+	border-radius: 5px;  
+    border: 2px  solid   #4F7A92;
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+	float: center; 	
+}
+
+
+.button_form{
+	height: 45px; 
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	text-transform: uppercase;
+	background-color: $boton_color; 
+	border-color: #ab4493; 
+	border-style: solid; 
+	border-radius: 10px;	
+	width: 420px;   
+  cursor: pointer;
+}
+
+
+.button_form p{
+	color: #fff; 
+}
+
+
+span{
+	color: #ab4493; 
+}
+
+
+.aviso{
+	font-size: 13px;  
+	color: #0e0e0e;  
+}
+
+
+
+
+.formulario h2{
+	font-size: 16px; 
+	padding-bottom: 30px;
+	color: #a8a8a8;   
+}
+
+
+.button_form p{
+	font-size: 14px; 
+	color: #ffffff; 
+    position: relative;
+    top: 20%;
+}
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+	outline:0;
+	border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus{
+	outline:0;
+	border: 1px solid #97d848;
+}
+
+.ubicacion{
+    padding-top: 5rem
+}
