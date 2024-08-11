@@ -3,23 +3,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem;
+    padding: $padding_desktop;
     height: 80px;
 }
 
 .background_title_contacto{
     position: absolute;
     top: 40%;
-    padding: 3rem;
+    padding: $padding_desktop;
     box-shadow: 2px 2px 2px white;
     background: #0000008f;
-    max-width: 500px;
+    max-width: 600px;
 }
 
 
 .title_contacto{
     @include title;
-    color: white !important;
+    color: rgb(230, 57, 70) !important;
+	text-transform: uppercase;
    
 }
 
@@ -32,14 +33,14 @@
 
 .contact_form{	
 max-width: 460px; 
+min-width: 0;
 height: auto;
 margin: 80px auto;
 border-radius: 10px;  
-padding-top: 30px;
-padding-bottom: 20px;  
+border: 1px solid $boton_color;
+padding: $padding_desktop 2rem $padding_desktop 2rem;  
 background-color: #fbfbfb; 
-padding-left: 30px; 
-box-shadow: 3px 2px 3px 2px #a8a8a8;
+box-shadow: 3px 4px 3px 4px #a8a8a8;
 }
 
 
@@ -75,18 +76,17 @@ label{
 
 
 .button_form{
+	position: relative;
+	right: 3%;
 	height: 45px; 
-	padding-left: 5px;
-	padding-right: 5px; 	
+	padding: 0 5px 0 5px;	
 	margin-bottom: 20px; 
 	margin-top: 10px; 	
 	text-transform: uppercase;
 	background-color: $boton_color; 
-	border-color: #ab4493; 
-	border-style: solid; 
 	border-radius: 10px;	
 	width: 420px;   
-  cursor: pointer;
+	
 }
 
 
@@ -144,6 +144,52 @@ span{
 	border: 1px solid #97d848;
 }
 
-.ubicacion{
-    padding-top: 5rem
+/*contactanos*/
+.contactanos{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 5rem 0 3rem 0;
 }
+
+.contactanos h1{
+	text-align: center;
+}
+.flex_contact{
+	display: flex;
+	align-items: center;
+}
+
+.flex_contact h2{
+	color: #a8a8a8;
+	font-size: $h2_font_size_desktop;
+	font-family: $p_font;
+
+}
+
+/*ubicacion*/
+.flex_contact img{
+	max-width: 150px;
+}
+
+.ubicacion{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ubicacion iframe{
+	@include respond-to(small){
+		max-width: 300px
+	}
+}
+
+.ubicacion p{
+	@include parrafos;
+	text-align: center;
+	padding: 2rem;
+	color: #a8a8a8;
+	
+}
+

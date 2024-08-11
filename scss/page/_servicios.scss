@@ -45,3 +45,82 @@
     padding: 15px;
     font-family: 'open sans';
 }
+
+/*testimonios*/
+
+
+.testimonios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $padding_desktop;
+}
+
+.testimonios h3{
+    text-align: center;
+}
+
+.testimonial-quote {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #000000;
+    padding: 20px;
+    border-left: 4px solid $boton_color;
+    background: #ffffff;
+    margin: 20px 0;
+    max-width: 600px;
+    box-shadow: 3px 3px 3px gray;
+}
+
+.testimonial-quote cite {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: $boton_color;
+}
+
+
+.section_cta{
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.cta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 500px;
+    min-width: 300px;
+    box-shadow: 3px 2px 3px 3px;
+    padding: 2rem
+}
+
+.cta h3{
+    @include title;
+    color: $boton_color;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.cta p{
+    @include parrafos;
+    text-align: center;
+    color: white;
+}
+
+.cta-button{
+    background-color: rgb(230, 57, 70);
+    padding: 10px;
+    text-decoration: none;
+    color: #FFF;
+    margin-bottom: 50px;
+    border-radius: 15px;
+}
+
+.cta-button a:hover{
+    color: #000000 !important;
+}
+
+
+

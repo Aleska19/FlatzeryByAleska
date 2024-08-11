@@ -183,7 +183,7 @@
 }
 /*Servicios*/
 .grid_service{
-    @include respond-to(small){
+    @include respond-to(medium){
         grid-template-columns: 300px;
         grid-template-rows: 300px 300px 300px 300px 300px 300px;
         padding: 0;
@@ -191,6 +191,97 @@
     }
 }
 
+
+.title_testimonio{
+    @include respond-to(small){
+        text-align: center;
+    }
+}
+
+.cta h3{
+    @include respond-to(small){
+        font-size: 1.5rem;
+    }
+}
+
+.cta p{
+    @include respond-to(small){
+        font-size: $p_font_size_mobile;
+    }
+}
+
+/*blog*/
+.blog-info{
+    @include respond-to (small){
+        min-height: 600px;
+    }
+}
+
+.cards_blog{
+    @include respond-to(medium){
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/*contactanos */
+
+.title_contacto{
+    @include respond-to(small){
+        font-size: $p_font_size_mobile;
+    }
+}
+
+.grid_section{
+    @include respond-to(medium){
+        grid-template-columns: 600px;
+        padding: 2rem;
+    }
+}
+
+.contact_form{
+    @include respond-to(small){
+        max-width: 350px;
+    }
+}
+
+input{
+    @include respond-to(small){
+        max-width: 300px;
+    }
+}
+
+textarea{
+    @include respond-to(small){
+        max-width: 300px;
+    }
+}
+
+.button_form{
+    @include respond-to(small){
+        max-width: 300px;
+    }
+}
+
+.contactanos{
+    @include respond-to(small){
+        padding: 1rem 0 3rem 0;
+    }
+}
+
+.flex_contact{
+    @include respond-to(small){
+        flex-direction: column;
+    }
+}
+
+.ubicacion p {
+    @include respond-to(small){
+        font-size: $p_font_size_mobile;
+        max-width: 350px;
+    }
+}
 
 
 
