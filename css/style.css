@@ -331,7 +331,7 @@ body {
 }
 
 .mision_info p {
-  color: #7f8c8d;
+  color: #56565f;
   font-size: 1.2rem;
   line-height: normal;
   font-family: "lato";
@@ -437,6 +437,7 @@ body {
   font-family: "lato";
   margin-top: 20px;
   padding: 10px 0 10px 0;
+  color: #56565f;
 }
 
 .grid {
@@ -487,13 +488,13 @@ body {
   font-size: 1.2rem;
   max-width: 500px;
   text-align: center;
+  color: #56565f;
 }
 
 /*valores*/
 .general_valores {
   margin-top: 2rem;
   padding: 0 20px 30px 20px;
-  background: black;
 }
 
 .img_valores {
@@ -527,7 +528,7 @@ body {
   padding-top: 20px;
   font-family: "lato";
   font-size: 1rem;
-  color: #7f8c8d;
+  color: #56565f;
 }
 
 .nuestros_valores ul li strong {
@@ -560,6 +561,7 @@ body {
   font-family: "lato";
   font-size: 1.2rem;
   text-align: center;
+  color: #56565f;
 }
 
 .title_coral {
@@ -639,7 +641,7 @@ body {
 }
 
 .service p {
-  color: #7f8c8d;
+  color: #56565f;
   text-align: center;
   font-size: 1rem;
   padding: 15px;

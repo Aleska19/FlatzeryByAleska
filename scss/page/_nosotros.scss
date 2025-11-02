@@ -28,6 +28,7 @@
     @include parrafos;
     max-width: 500px;
     text-align: center;
+    color: #56565f;
 }
 
 
@@ -35,7 +36,6 @@
 .general_valores{
     margin-top: 2rem;
     padding: 0 20px 30px 20px;
-    background: black;
 }
 
 .img_valores{
@@ -65,7 +65,7 @@
     padding-top: 20px;
     font-family: $p_font;
     font-size: 1rem;
-    color: #7f8c8d;
+    color: #56565f;
 }
 
 .nuestros_valores ul li strong{
@@ -92,4 +92,5 @@
 .card-text{
     @include parrafos;
     text-align: center;
+    color: #56565f;
 }
