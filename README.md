@@ -2,6 +2,8 @@
 
 Sitio/landing web estático creado por Aleska19. Esta landing page fue entregada como proyecto para el curso de Desarrollo Web de Coderhouse. El repositorio contiene la página principal, estilos (SCSS/CSS), scripts front-end, recursos y la configuración usada para compilar/depurar el proyecto.
 
+[![Vercel](https://img.shields.io/badge/deployed%20on-Vercel-000000?style=flat&logo=vercel)](https://flatzerybyaleska.vercel.app) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 Estado de despliegue
 - Desplegado en Vercel: https://flatzerybyaleska.vercel.app
 
@@ -38,32 +40,19 @@ Contenido del package.json
 - dependencias:
   - bootstrap: ^5.3.3
 
-Sugerencias de scripts npm (opcional — añádelos a package.json para facilitar el flujo de trabajo)
-- "dev": servidor local con recarga (live-server)
-- "sass": compilar SCSS a CSS (sass)
-- "build:css": compilar y minificar SCSS
-- "build:js": minificar JS (terser)
-- "build": tarea combinada de producción
+Scripts útiles (ya añadidos al package.json)
+- npm run dev  — arranca un servidor local con recarga (live-server).
+- npm run sass — compila SCSS a CSS (modo desarrollo).
+- npm run build:css — compila y minifica SCSS para producción.
+- npm run build:js — minifica JS con terser.
+- npm run build — build combinado (CSS + JS).
 
-Recomendaciones de herramientas
-- Preprocesado SCSS: Prepros (hay prepros.config) o dart-sass (npm: sass).
-- Live-reload: live-server (npm) o Live Server extensión de VSCode.
-- Minificación JS: terser (npm).
-- Linter HTML: htmlhint (hay .hintrc).
-- Optimización de imágenes: imagemin o herramientas online.
-
-Estructura del repositorio (según lo que existe actualmente)
-- .github/ — configuración de GitHub (si aplica)
-- .vscode/ — ajustes del editor
-- .hintrc — reglas para HTMLHint
-- assets/ — imágenes, iconos, fuentes
-- css/ — CSS compilado
-- scss/ — archivos fuente SCSS
-- js/ — scripts front-end
-- html/ — páginas adicionales (si las hay)
-- index.html — página principal
-- package.json, package-lock.json — metadata de npm y dependencias
-- prepros.config — configuración de Prepros
+Prepros (si usas Prepros)
+- El proyecto incluye prepros.config que puede contener las tareas de compilación de SCSS a CSS y minificación. Si usas Prepros, importa prepros.config en la app y verifica las rutas de entrada (scss/) y salida (css/).
+- Pasos generales que aparecen en prepros.config (resumen):
+  1. Compilar archivos SCSS desde scss/ hacia css/.
+  2. Opcional: minificar CSS para producción.
+  3. Copiar/optimizar assets a la carpeta final.
 
 Flujo de trabajo sugerido
 - Desarrollo:
@@ -75,13 +64,6 @@ Flujo de trabajo sugerido
   - Optimiza imágenes y fuentes.
   - Despliega en Vercel (recomendado para despliegue automático desde GitHub).
 
-Notas específicas sobre Vercel
-- Vercel detecta sitios estáticos automáticamente. Pasos básicos:
-  1. Conecta tu repositorio de GitHub a Vercel.
-  2. Selecciona la rama a desplegar (por ejemplo, main).
-  3. Si necesitas un proceso de build (compilar SCSS), configura el comando de build (ej. npm run build) y la carpeta de salida (por ejemplo, la raíz del proyecto).
-  4. Vercel realizará despliegues automáticos en cada push a la rama configurada.
-
 Contribuir
 1. Haz fork del repo.
 2. Crea una rama: git checkout -b feature/nombre
@@ -89,11 +71,7 @@ Contribuir
 4. Abre un Pull Request hacia main.
 
 Licencia
-- Añade un archivo LICENSE si quieres especificar una licencia (por ejemplo MIT). Si lo deseas, puedo generar el archivo LICENSE y añadirlo al repositorio.
+- Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
 
 Contacto
 - Autor: Aleska19 — https://github.com/Aleska19
-
----
-
-README.md creado y actualizado para indicar despliegue en Vercel y que la landing page fue entregada como proyecto del curso de Desarrollo Web de Coderhouse.
